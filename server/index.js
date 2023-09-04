@@ -37,7 +37,7 @@ app.use(cors());
 app.use("/assets",express.static(path.join(__dirname,'public/assets')));
 
 // FILE STORAGE
-const storage = multer({
+const storage = multer.diskStorage({
     destination: function(req,file,cb){
         cb(null, "public/assets");
     },
@@ -45,7 +45,7 @@ const storage = multer({
         cb(null,file.originalname);
     }
 });
-const upload = multer({storage});
+const upload = multer({ storage: storage });
 
 // ROUTES WITH FILES
 app.post("/auth/register",upload.single("picture"),register)
