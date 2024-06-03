@@ -1,0 +1,2 @@
+##### This project as a social media application encompassed robust functionality, including user-friendly feed posting, secure authentication, seamless friend circle creation, intuitive user profiles, dynamic dark/light mode toggling, and interactive features such as likes and comments.
+##### Users will also have the capability to generate captions for their posts by CaptionGen which utilizes the OpenAI API with help of keywords
